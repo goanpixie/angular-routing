@@ -6,16 +6,21 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { CustomerComponent } from './customer/customer.component';
+import { AdminComponent } from './admin/admin.component';
+import { AdminModule } from './admin/admin.module';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
-    CustomerComponent
+    CustomerComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
+    AdminModule,
     AppRoutingModule
   ],
   providers: [],
